@@ -4,15 +4,15 @@ services:
     restart: unless-stopped
     environment:
       NEO4J_AUTH: ${NEO4J_USER}/${NEO4J_PASSWORD}
-
       # => server.default_listen_address=0.0.0.0
-      NEO4J_server_default_listen__address: "0.0.0.0"
+      NEO4J_server_default_listen__address: "0.0.0.0"    
       # => server.default_advertised_address=neo4j
-      NEO4J_server_default_advertised__address: "neo4j"
+      NEO4J_server_default_advertised__address: "neo4j"    
       # => server.bolt.listen_address=:7687
-      NEO4J_server_bolt_listen__address: ":7687"
+      NEO4J_server_bolt_listen__address: ":7687"    
       # => server.bolt.advertised_address=neo4j:7687
       NEO4J_server_bolt_advertised__address: "neo4j:7687"
+
 
       # Опционально: отключить строгую валидацию на время отладки
       # NEO4J_server_config_strict__validation__enabled: "false"
